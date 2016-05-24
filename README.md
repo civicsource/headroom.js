@@ -41,12 +41,6 @@ Using headroom.js is really simple. It has a pure JS API, plus an optional jQuer
 npm install headroom.js --save
 ```
 
-### Install with bower
-
-```bash
-bower install https://npmcdn.com/headroom.js/bower.zip --save
-```
-
 ### Using Headroom.js with a CDN
 
 A universal build (suitable for script tags, CommonJS, and AMD) is available from npmcdn.com:
@@ -105,7 +99,7 @@ And then use the directive in your markup:
 <headroom tolerance='0' offset='0' scroller=".my-scroller" classes="{pinned:'headroom--pinned',unpinned:'headroom--unpinned',initial:'headroom'}"></headroom>
 ```
 
-Note: in AngularJS, you cannot pass a DOM element as a directive attribute. Instead, you have to provide a selector that can be passed to [angular.element](http://docs.angularjs.org/api/ng/function/angular.element). If you use default AngularJS jQLite selector engine, [here are the compliant selectors](https://code.google.com/p/jqlite/wiki/UsingJQLite). 
+Note: in AngularJS, you cannot pass a DOM element as a directive attribute. Instead, you have to provide a selector that can be passed to [angular.element](http://docs.angularjs.org/api/ng/function/angular.element). If you use default AngularJS jQLite selector engine, [here are the compliant selectors](https://code.google.com/p/jqlite/wiki/UsingJQLite).
 
 ## Options
 
