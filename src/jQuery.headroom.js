@@ -1,8 +1,5 @@
-(function($) {
-
-  if(!$) {
-    return;
-  }
+var $ = require("jquery");
+var Headroom = require("./headroom");
 
   ////////////
   // Plugin //
@@ -39,5 +36,3 @@
     var $this = $(this);
     $this.headroom($this.data());
   });
-
-}(window.Zepto || window.jQuery));
