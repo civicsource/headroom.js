@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '<%= meta.output %>' : ['src/include/wrapper.js'],
+          'dist/headroom.js' : ['src/include/wrapper.js'],
           'dist/jQuery.headroom.js' : ['src/jQuery.headroom.js'],
           'dist/angular.headroom.js' : ['src/angular.headroom.js']
         }
@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('prehint', ['jshint:prebuild', 'jshint:tests']);
   grunt.registerTask('ci', ['prehint', 'karma:continuous']);
-  grunt.registerTask('dist', ['ci', 'rig', 'uglify']);
+  grunt.registerTask('dist', ['rig']);
   grunt.registerTask('test', ['karma:continuous']);
   grunt.registerTask('default', ['karma:unit:start', 'watch']);
 };
